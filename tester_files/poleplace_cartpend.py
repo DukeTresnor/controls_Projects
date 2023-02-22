@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from collections import namedtuple
 import importlib
 import control
-import controlpy as cpy
+#import controlpy as cpy
 
 #importing from linearQuadraticRegulator
 mod_lqr = importlib.import_module('linearQuadraticRegulator')
@@ -106,6 +106,9 @@ K, riacatti, lqreigvals = mod_lqr.lqr(A, B, Q, R)
 
 print(K)
 
+print(C)
+
+print(np.linalg.matrix_rank(C))
 
 #bk = np.dot(B,K)
 #aminusbk = np.subtract(A,bk)

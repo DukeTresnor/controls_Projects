@@ -4,11 +4,11 @@ from scipy.integrate import odeint
 import matplotlib.pyplot as plt
 from collections import namedtuple
 import importlib
-import control
+#import control
 
 
 # importing from poleplace_cartpend
-poleCart = importlib.import_module('poleplace_cartpend')
+#poleCart = importlib.import_module('poleplace_cartpend')
 
 # importing from invertedPendulum.py
 invP = importlib.import_module('invertedPendulum')
